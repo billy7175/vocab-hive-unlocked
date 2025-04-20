@@ -20,6 +20,10 @@ interface WordSetsTableProps {
 export const WordSetsTable = ({ wordSets }: WordSetsTableProps) => {
   const navigate = useNavigate();
 
+  const handleStudyClick = (setId: string) => {
+    navigate(`/wordsets/${setId}`);
+  };
+
   return (
     <div className="rounded-md border">
       <Table>
@@ -34,7 +38,11 @@ export const WordSetsTable = ({ wordSets }: WordSetsTableProps) => {
         </TableHeader>
         <TableBody>
           {wordSets.map((set) => (
-            <TableRow key={set.id}>
+            <TableRow 
+              key={set.id} 
+              className="cursor-pointer hover:bg-muted/80"
+              onClick={() => handleStudyClick(set.id)}
+            >
               <TableCell className="font-medium">
                 <div>
                   <div className="font-semibold">{set.title}</div>
@@ -58,7 +66,10 @@ export const WordSetsTable = ({ wordSets }: WordSetsTableProps) => {
               </TableCell>
               <TableCell className="text-right">
                 <Button
-                  onClick={() => navigate(`/wordsets/${set.id}`)}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleStudyClick(set.id);
+                  }}
                   size="sm"
                 >
                   공부하기

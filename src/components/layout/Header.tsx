@@ -102,6 +102,10 @@ const Header = ({ onSearch }: HeaderProps) => {
             <Link to="/contribute">Contribute</Link>
           </Button>
           
+          <Button asChild variant="outline" className="hidden md:inline-flex">
+            <Link to="/wordsets">단어장</Link>
+          </Button>
+          
           <Button asChild>
             <Link to="/my-words">My Words</Link>
           </Button>
