@@ -9,6 +9,7 @@ import ContributePage from "./pages/ContributePage";
 import MyWordsPage from "./pages/MyWordsPage";
 import WordSetsPage from "./pages/WordSetsPage";
 import WordSetDetailPage from "./pages/WordSetDetailPage";
+import LevelBasedPage from "./pages/LevelBasedPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/my-words" element={<MyWordsPage />} />
           <Route path="/wordsets" element={<WordSetsPage />} />
           <Route path="/wordsets/:id" element={<WordSetDetailPage />} />
+          <Route path="/level-based" element={<LevelBasedPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

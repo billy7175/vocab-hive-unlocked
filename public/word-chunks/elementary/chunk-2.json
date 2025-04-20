@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "level": "elementary",
+    "chunkId": 2,
+    "totalChunks": 2,
+    "wordCount": 3,
+    "startIndex": 50,
+    "endIndex": 52
+  },
+  "words": [
+    {
+      "id": "word_beginner_48",
+      "word": "word_beginner_48",
+      "meaning": "beginner level word 48의 의미",
+      "translation": "beginner level word 48의 번역",
+      "example": "This is an example sentence for beginner level word 48.",
+      "pronunciation": "/prəˌnʌn.siˈeɪ.ʃən_48/",
+      "notes": "beginner 레벨 단어 48에 대한 노트",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "테크놀로지"
+        }
+      ],
+      "submittedBy": "김철수",
+      "dateAdded": "2023-05-31T15:00:00.000Z",
+      "difficulty": "beginner",
+      "isBookmarked": false
+    },
+    {
+      "id": "word_beginner_49",
+      "word": "word_beginner_49",
+      "meaning": "beginner level word 49의 의미",
+      "translation": "beginner level word 49의 번역",
+      "example": "This is an example sentence for beginner level word 49.",
+      "pronunciation": "/prəˌnʌn.siˈeɪ.ʃən_49/",
+      "notes": "beginner 레벨 단어 49에 대한 노트",
+      "tags": [
+        {
+          "id": "tag3",
+          "name": "학술"
+        }
+      ],
+      "submittedBy": "이영희",
+      "dateAdded": "2023-06-01T15:00:00.000Z",
+      "difficulty": "beginner",
+      "isBookmarked": false
+    },
+    {
+      "id": "word_beginner_50",
+      "word": "word_beginner_50",
+      "meaning": "beginner level word 50의 의미",
+      "translation": "beginner level word 50의 번역",
+      "example": "This is an example sentence for beginner level word 50.",
+      "pronunciation": "/prəˌnʌn.siˈeɪ.ʃən_50/",
+      "notes": "beginner 레벨 단어 50에 대한 노트",
+      "tags": [
+        {
+          "id": "tag6",
+          "name": "의학"
+        },
+        {
+          "id": "tag10",
+          "name": "IT"
+        },
+        {
+          "id": "tag5",
+          "name": "여행"
+        }
+      ],
+      "submittedBy": "김철수",
+      "dateAdded": "2023-06-02T15:00:00.000Z",
+      "difficulty": "beginner",
+      "isBookmarked": true
+    }
+  ]
+}

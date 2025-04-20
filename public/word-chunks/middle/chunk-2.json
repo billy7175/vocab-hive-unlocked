@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "level": "middle",
+    "chunkId": 2,
+    "totalChunks": 2,
+    "wordCount": 1,
+    "startIndex": 50,
+    "endIndex": 50
+  },
+  "words": [
+    {
+      "id": "word_intermediate_50",
+      "word": "word_intermediate_50",
+      "meaning": "intermediate level word 50의 의미",
+      "translation": "intermediate level word 50의 번역",
+      "example": "This is an example sentence for intermediate level word 50.",
+      "pronunciation": "/prəˌnʌn.siˈeɪ.ʃən_50/",
+      "notes": "intermediate 레벨 단어 50에 대한 노트",
+      "tags": [
+        {
+          "id": "tag9",
+          "name": "관용어"
+        },
+        {
+          "id": "tag5",
+          "name": "여행"
+        },
+        {
+          "id": "tag8",
+          "name": "TOEFL"
+        }
+      ],
+      "submittedBy": "정수연",
+      "dateAdded": "2023-06-02T15:00:00.000Z",
+      "difficulty": "intermediate",
+      "isBookmarked": false
+    }
+  ]
+}

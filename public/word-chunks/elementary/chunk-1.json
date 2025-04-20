@@ -1,0 +1,327 @@
+{
+  "meta": {
+    "level": "elementary",
+    "chunkId": 1,
+    "totalChunks": 1,
+    "wordCount": 15,
+    "startIndex": 0,
+    "endIndex": 14
+  },
+  "words": [
+    {
+      "id": "elem1",
+      "word": "apple",
+      "meaning": "사과",
+      "translation": "りんご (일본어)",
+      "example": "I eat an apple every day.",
+      "pronunciation": "/ˈæp.əl/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag9",
+          "name": "음식"
+        }
+      ],
+      "submittedBy": "이영희 선생님",
+      "dateAdded": "2023-01-10T09:00:00Z",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "elem2",
+      "word": "run",
+      "meaning": "달리다",
+      "translation": "走る (일본어)",
+      "example": "I like to run in the park.",
+      "pronunciation": "/rʌn/",
+      "tags": [
+        {
+          "id": "tag1",
+          "name": "기본동사"
+        },
+        {
+          "id": "tag19",
+          "name": "스포츠"
+        }
+      ],
+      "submittedBy": "김철수 선생님",
+      "dateAdded": "2023-01-11T09:00:00Z",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "elem3",
+      "word": "happy",
+      "meaning": "행복한",
+      "translation": "嬉しい (일본어)",
+      "example": "She looks happy today.",
+      "pronunciation": "/ˈhæp.i/",
+      "tags": [
+        {
+          "id": "tag3",
+          "name": "형용사"
+        },
+        {
+          "id": "tag15",
+          "name": "감정"
+        }
+      ],
+      "submittedBy": "박민지 선생님",
+      "dateAdded": "2023-01-12T09:00:00Z",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "elem4",
+      "word": "school",
+      "meaning": "학교",
+      "translation": "学校 (일본어)",
+      "example": "I go to school every morning.",
+      "pronunciation": "/skuːl/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag6",
+          "name": "학교생활"
+        }
+      ],
+      "submittedBy": "정수연 선생님",
+      "dateAdded": "2023-01-13T09:00:00Z",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "elem5",
+      "word": "family",
+      "meaning": "가족",
+      "translation": "家族 (일본어)",
+      "example": "My family is very important to me.",
+      "pronunciation": "/ˈfæm.əl.i/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag8",
+          "name": "가족"
+        }
+      ],
+      "submittedBy": "최동욱 선생님",
+      "dateAdded": "2023-01-14T09:00:00Z",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "elem6",
+      "word": "book",
+      "meaning": "책",
+      "translation": "本 (일본어)",
+      "example": "I am reading a book.",
+      "pronunciation": "/bʊk/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag6",
+          "name": "학교생활"
+        }
+      ],
+      "submittedBy": "이영희 선생님",
+      "dateAdded": "2023-01-15T09:00:00Z",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "elem7",
+      "word": "dog",
+      "meaning": "개",
+      "translation": "犬 (일본어)",
+      "example": "I have a small dog.",
+      "pronunciation": "/dɒɡ/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag10",
+          "name": "동물"
+        }
+      ],
+      "submittedBy": "김철수 선생님",
+      "dateAdded": "2023-01-16T09:00:00Z",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "elem8",
+      "word": "water",
+      "meaning": "물",
+      "translation": "水 (일본어)",
+      "example": "Please drink more water.",
+      "pronunciation": "/ˈwɔː.tər/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag7",
+          "name": "일상생활"
+        }
+      ],
+      "submittedBy": "박민지 선생님",
+      "dateAdded": "2023-01-17T09:00:00Z",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "elem9",
+      "word": "sun",
+      "meaning": "태양",
+      "translation": "太陽 (일본어)",
+      "example": "The sun is shining bright today.",
+      "pronunciation": "/sʌn/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag11",
+          "name": "날씨"
+        }
+      ],
+      "submittedBy": "정수연 선생님",
+      "dateAdded": "2023-01-18T09:00:00Z",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "elem10",
+      "word": "tree",
+      "meaning": "나무",
+      "translation": "木 (일본어)",
+      "example": "There is a big tree in our garden.",
+      "pronunciation": "/triː/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag7",
+          "name": "일상생활"
+        }
+      ],
+      "submittedBy": "최동욱 선생님",
+      "dateAdded": "2023-01-19T09:00:00Z",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "elem11",
+      "word": "cat",
+      "meaning": "고양이",
+      "translation": "猫 (일본어)",
+      "example": "The cat is sleeping on the sofa.",
+      "pronunciation": "/kæt/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag10",
+          "name": "동물"
+        }
+      ],
+      "submittedBy": "이영희 선생님",
+      "dateAdded": "2023-01-20T09:00:00Z",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "elem12",
+      "word": "house",
+      "meaning": "집",
+      "translation": "家 (일본어)",
+      "example": "This is my house.",
+      "pronunciation": "/haʊs/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag7",
+          "name": "일상생활"
+        }
+      ],
+      "submittedBy": "김철수 선생님",
+      "dateAdded": "2023-01-21T09:00:00Z",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "elem13",
+      "word": "friend",
+      "meaning": "친구",
+      "translation": "友達 (일본어)",
+      "example": "He is my best friend.",
+      "pronunciation": "/frend/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag8",
+          "name": "가족"
+        }
+      ],
+      "submittedBy": "박민지 선생님",
+      "dateAdded": "2023-01-22T09:00:00Z",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "elem14",
+      "word": "color",
+      "meaning": "색깔",
+      "translation": "色 (일본어)",
+      "example": "What is your favorite color?",
+      "pronunciation": "/ˈkʌl.ər/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag20",
+          "name": "문화예술"
+        }
+      ],
+      "submittedBy": "정수연 선생님",
+      "dateAdded": "2023-01-23T09:00:00Z",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "elem15",
+      "word": "play",
+      "meaning": "놀다, 연주하다",
+      "translation": "遊ぶ (일본어)",
+      "example": "Children play in the playground.",
+      "pronunciation": "/pleɪ/",
+      "tags": [
+        {
+          "id": "tag1",
+          "name": "기본동사"
+        },
+        {
+          "id": "tag7",
+          "name": "일상생활"
+        }
+      ],
+      "submittedBy": "최동욱 선생님",
+      "dateAdded": "2023-01-24T09:00:00Z",
+      "difficulty": "beginner"
+    }
+  ]
+}

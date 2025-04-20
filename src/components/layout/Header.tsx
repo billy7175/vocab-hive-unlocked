@@ -103,6 +103,10 @@ const Header = ({ onSearch }: HeaderProps) => {
           </Button>
           
           <Button asChild variant="outline" className="hidden md:inline-flex">
+            <Link to="/level-based">난이도별 단어장</Link>
+          </Button>
+          
+          <Button asChild variant="outline" className="hidden md:inline-flex">
             <Link to="/wordsets">단어장</Link>
           </Button>
           

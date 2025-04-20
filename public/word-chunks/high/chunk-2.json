@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "level": "high",
+    "chunkId": 2,
+    "totalChunks": 2,
+    "wordCount": 1,
+    "startIndex": 50,
+    "endIndex": 50
+  },
+  "words": [
+    {
+      "id": "word_advanced_50",
+      "word": "word_advanced_50",
+      "meaning": "advanced level word 50의 의미",
+      "translation": "advanced level word 50의 번역",
+      "example": "This is an example sentence for advanced level word 50.",
+      "pronunciation": "/prəˌnʌn.siˈeɪ.ʃən_50/",
+      "notes": "advanced 레벨 단어 50에 대한 노트",
+      "tags": [
+        {
+          "id": "tag1",
+          "name": "비즈니스"
+        }
+      ],
+      "submittedBy": "정수연",
+      "dateAdded": "2023-06-02T15:00:00.000Z",
+      "difficulty": "advanced",
+      "isBookmarked": true
+    }
+  ]
+}

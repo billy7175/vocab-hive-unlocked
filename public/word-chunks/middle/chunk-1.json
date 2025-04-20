@@ -1,0 +1,339 @@
+{
+  "meta": {
+    "level": "middle",
+    "chunkId": 1,
+    "totalChunks": 1,
+    "wordCount": 15,
+    "startIndex": 0,
+    "endIndex": 14
+  },
+  "words": [
+    {
+      "id": "mid1",
+      "word": "achieve",
+      "meaning": "달성하다, 성취하다",
+      "translation": "达成 (중국어)",
+      "example": "She achieved her goal of becoming a doctor.",
+      "pronunciation": "/əˈtʃiːv/",
+      "tags": [
+        {
+          "id": "tag1",
+          "name": "기본동사"
+        },
+        {
+          "id": "tag16",
+          "name": "직업"
+        }
+      ],
+      "submittedBy": "김지영 선생님",
+      "dateAdded": "2023-02-01T09:00:00Z",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "mid2",
+      "word": "environment",
+      "meaning": "환경",
+      "translation": "環境 (일본어)",
+      "example": "We must protect our environment.",
+      "pronunciation": "/ɪnˈvaɪ.rən.mənt/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag12",
+          "name": "과학"
+        }
+      ],
+      "submittedBy": "이준호 선생님",
+      "dateAdded": "2023-02-02T09:00:00Z",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "mid3",
+      "word": "essential",
+      "meaning": "필수적인, 본질적인",
+      "translation": "必要な (일본어)",
+      "example": "Water is essential for life.",
+      "pronunciation": "/ɪˈsen.ʃəl/",
+      "tags": [
+        {
+          "id": "tag3",
+          "name": "형용사"
+        },
+        {
+          "id": "tag12",
+          "name": "과학"
+        }
+      ],
+      "submittedBy": "박서준 선생님",
+      "dateAdded": "2023-02-03T09:00:00Z",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "mid4",
+      "word": "evaluate",
+      "meaning": "평가하다",
+      "translation": "評価する (일본어)",
+      "example": "Teachers evaluate students through exams.",
+      "pronunciation": "/ɪˈvæl.ju.eɪt/",
+      "tags": [
+        {
+          "id": "tag1",
+          "name": "기본동사"
+        },
+        {
+          "id": "tag6",
+          "name": "학교생활"
+        }
+      ],
+      "submittedBy": "정미경 선생님",
+      "dateAdded": "2023-02-04T09:00:00Z",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "mid5",
+      "word": "influence",
+      "meaning": "영향, 영향을 미치다",
+      "translation": "影響 (일본어)",
+      "example": "Social media has a big influence on teenagers.",
+      "pronunciation": "/ˈɪn.flu.əns/",
+      "tags": [
+        {
+          "id": "tag1",
+          "name": "기본동사"
+        },
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag14",
+          "name": "사회"
+        }
+      ],
+      "submittedBy": "최유진 선생님",
+      "dateAdded": "2023-02-05T09:00:00Z",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "mid6",
+      "word": "perspective",
+      "meaning": "관점, 시각",
+      "translation": "視点 (일본어)",
+      "example": "From my perspective, this is the best solution.",
+      "pronunciation": "/pərˈspek.tɪv/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag14",
+          "name": "사회"
+        }
+      ],
+      "submittedBy": "김지영 선생님",
+      "dateAdded": "2023-02-06T09:00:00Z",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "mid7",
+      "word": "responsible",
+      "meaning": "책임이 있는, 책임감 있는",
+      "translation": "責任のある (일본어)",
+      "example": "Parents are responsible for their children's education.",
+      "pronunciation": "/rɪˈspɒn.sə.bəl/",
+      "tags": [
+        {
+          "id": "tag3",
+          "name": "형용사"
+        },
+        {
+          "id": "tag7",
+          "name": "일상생활"
+        }
+      ],
+      "submittedBy": "이준호 선생님",
+      "dateAdded": "2023-02-07T09:00:00Z",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "mid8",
+      "word": "technology",
+      "meaning": "기술",
+      "translation": "技術 (일본어)",
+      "example": "Technology is advancing rapidly.",
+      "pronunciation": "/tekˈnɒl.ə.dʒi/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag12",
+          "name": "과학"
+        }
+      ],
+      "submittedBy": "박서준 선생님",
+      "dateAdded": "2023-02-08T09:00:00Z",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "mid9",
+      "word": "tradition",
+      "meaning": "전통",
+      "translation": "伝統 (일본어)",
+      "example": "We should preserve our cultural traditions.",
+      "pronunciation": "/trəˈdɪʃ.ən/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag20",
+          "name": "문화예술"
+        }
+      ],
+      "submittedBy": "정미경 선생님",
+      "dateAdded": "2023-02-09T09:00:00Z",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "mid10",
+      "word": "volunteer",
+      "meaning": "자원봉사자, 자원봉사하다",
+      "translation": "ボランティア (일본어)",
+      "example": "Many students volunteer at the local hospital.",
+      "pronunciation": "/ˌvɒl.ənˈtɪər/",
+      "tags": [
+        {
+          "id": "tag1",
+          "name": "기본동사"
+        },
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag14",
+          "name": "사회"
+        }
+      ],
+      "submittedBy": "최유진 선생님",
+      "dateAdded": "2023-02-10T09:00:00Z",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "mid11",
+      "word": "benefit",
+      "meaning": "이익, 혜택",
+      "translation": "利益 (일본어)",
+      "example": "Regular exercise has many health benefits.",
+      "pronunciation": "/ˈben.ɪ.fɪt/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag18",
+          "name": "건강"
+        }
+      ],
+      "submittedBy": "김지영 선생님",
+      "dateAdded": "2023-02-11T09:00:00Z",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "mid12",
+      "word": "community",
+      "meaning": "공동체, 지역사회",
+      "translation": "コミュニティ (일본어)",
+      "example": "Our school is part of the local community.",
+      "pronunciation": "/kəˈmjuː.nə.ti/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag14",
+          "name": "사회"
+        }
+      ],
+      "submittedBy": "이준호 선생님",
+      "dateAdded": "2023-02-12T09:00:00Z",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "mid13",
+      "word": "develop",
+      "meaning": "발전하다, 개발하다",
+      "translation": "開発する (일본어)",
+      "example": "Scientists are developing new medicines.",
+      "pronunciation": "/dɪˈvel.əp/",
+      "tags": [
+        {
+          "id": "tag1",
+          "name": "기본동사"
+        },
+        {
+          "id": "tag12",
+          "name": "과학"
+        }
+      ],
+      "submittedBy": "박서준 선생님",
+      "dateAdded": "2023-02-13T09:00:00Z",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "mid14",
+      "word": "experience",
+      "meaning": "경험, 경험하다",
+      "translation": "経験 (일본어)",
+      "example": "Traveling abroad is a great experience.",
+      "pronunciation": "/ɪkˈspɪə.ri.əns/",
+      "tags": [
+        {
+          "id": "tag1",
+          "name": "기본동사"
+        },
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag7",
+          "name": "일상생활"
+        }
+      ],
+      "submittedBy": "정미경 선생님",
+      "dateAdded": "2023-02-14T09:00:00Z",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "mid15",
+      "word": "knowledge",
+      "meaning": "지식",
+      "translation": "知識 (일본어)",
+      "example": "Reading books increases your knowledge.",
+      "pronunciation": "/ˈnɒl.ɪdʒ/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag6",
+          "name": "학교생활"
+        }
+      ],
+      "submittedBy": "최유진 선생님",
+      "dateAdded": "2023-02-15T09:00:00Z",
+      "difficulty": "intermediate"
+    }
+  ]
+}

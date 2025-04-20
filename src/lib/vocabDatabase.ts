@@ -6,10 +6,12 @@ const DB_VERSION = 1;
 const WORD_STORE = 'words';
 const TAG_STORE = 'tags';
 
+
 // IndexedDB 초기화 함수
 export const initDatabase = (): Promise<IDBDatabase> => {
   return new Promise((resolve, reject) => {
-    const request = indexedDB.open(DB_NAME, DB_VERSION);
+    // const request = indexedDB.open(DB_NAME, DB_VERSION);
+    const request = indexedDB.open(DB_NAME, DB_VERSION)
 
     request.onerror = (event) => {
       reject('데이터베이스 접근에 실패했습니다.');

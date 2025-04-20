@@ -1,0 +1,106 @@
+{
+  "version": "1.0",
+  "source": "Vocab Hive",
+  "totalWords": 45,
+  "levels": [
+    {
+      "level": "elementary",
+      "wordCount": 15,
+      "chunkCount": 1
+    },
+    {
+      "level": "middle",
+      "wordCount": 15,
+      "chunkCount": 1
+    },
+    {
+      "level": "high",
+      "wordCount": 15,
+      "chunkCount": 1
+    }
+  ],
+  "tags": [
+    {
+      "id": "tag1",
+      "name": "기본동사"
+    },
+    {
+      "id": "tag2",
+      "name": "명사"
+    },
+    {
+      "id": "tag3",
+      "name": "형용사"
+    },
+    {
+      "id": "tag4",
+      "name": "부사"
+    },
+    {
+      "id": "tag5",
+      "name": "숙어"
+    },
+    {
+      "id": "tag6",
+      "name": "학교생활"
+    },
+    {
+      "id": "tag7",
+      "name": "일상생활"
+    },
+    {
+      "id": "tag8",
+      "name": "가족"
+    },
+    {
+      "id": "tag9",
+      "name": "음식"
+    },
+    {
+      "id": "tag10",
+      "name": "동물"
+    },
+    {
+      "id": "tag11",
+      "name": "날씨"
+    },
+    {
+      "id": "tag12",
+      "name": "과학"
+    },
+    {
+      "id": "tag13",
+      "name": "수학"
+    },
+    {
+      "id": "tag14",
+      "name": "사회"
+    },
+    {
+      "id": "tag15",
+      "name": "감정"
+    },
+    {
+      "id": "tag16",
+      "name": "직업"
+    },
+    {
+      "id": "tag17",
+      "name": "교통"
+    },
+    {
+      "id": "tag18",
+      "name": "건강"
+    },
+    {
+      "id": "tag19",
+      "name": "스포츠"
+    },
+    {
+      "id": "tag20",
+      "name": "문화예술"
+    }
+  ],
+  "wordsPerChunk": 50,
+  "createdAt": "2025-04-20T21:23:10.809Z"
+}

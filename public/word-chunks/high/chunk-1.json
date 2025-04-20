@@ -1,0 +1,327 @@
+{
+  "meta": {
+    "level": "high",
+    "chunkId": 1,
+    "totalChunks": 1,
+    "wordCount": 15,
+    "startIndex": 0,
+    "endIndex": 14
+  },
+  "words": [
+    {
+      "id": "adv1",
+      "word": "ambiguous",
+      "meaning": "모호한, 애매한",
+      "translation": "曖昧な (일본어)",
+      "example": "The politician's answer was deliberately ambiguous.",
+      "pronunciation": "/æmˈbɪɡ.ju.əs/",
+      "tags": [
+        {
+          "id": "tag3",
+          "name": "형용사"
+        },
+        {
+          "id": "tag14",
+          "name": "사회"
+        }
+      ],
+      "submittedBy": "김민수 교수님",
+      "dateAdded": "2023-03-01T09:00:00Z",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "adv2",
+      "word": "autonomous",
+      "meaning": "자율적인, 자치의",
+      "translation": "自律的な (일본어)",
+      "example": "The company developed an autonomous driving system.",
+      "pronunciation": "/ɔːˈtɒn.ə.məs/",
+      "tags": [
+        {
+          "id": "tag3",
+          "name": "형용사"
+        },
+        {
+          "id": "tag12",
+          "name": "과학"
+        }
+      ],
+      "submittedBy": "이정호 교수님",
+      "dateAdded": "2023-03-02T09:00:00Z",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "adv3",
+      "word": "conundrum",
+      "meaning": "난해한 문제, 수수께끼",
+      "translation": "難問 (일본어)",
+      "example": "Climate change presents us with a serious conundrum.",
+      "pronunciation": "/kəˈnʌn.drəm/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag14",
+          "name": "사회"
+        }
+      ],
+      "submittedBy": "박성희 교수님",
+      "dateAdded": "2023-03-03T09:00:00Z",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "adv4",
+      "word": "dichotomy",
+      "meaning": "이분법, 양분",
+      "translation": "二分法 (일본어)",
+      "example": "The dichotomy between work and life is increasingly blurred.",
+      "pronunciation": "/daɪˈkɒt.ə.mi/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag14",
+          "name": "사회"
+        }
+      ],
+      "submittedBy": "정유라 교수님",
+      "dateAdded": "2023-03-04T09:00:00Z",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "adv5",
+      "word": "ephemeral",
+      "meaning": "일시적인, 수명이 짧은",
+      "translation": "はかない (일본어)",
+      "example": "The beauty of cherry blossoms is ephemeral.",
+      "pronunciation": "/ɪˈfem.ər.əl/",
+      "tags": [
+        {
+          "id": "tag3",
+          "name": "형용사"
+        },
+        {
+          "id": "tag20",
+          "name": "문화예술"
+        }
+      ],
+      "submittedBy": "최진우 교수님",
+      "dateAdded": "2023-03-05T09:00:00Z",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "adv6",
+      "word": "idiosyncrasy",
+      "meaning": "특이성, 개성",
+      "translation": "特異性 (일본어)",
+      "example": "Each language has its own idiosyncrasies.",
+      "pronunciation": "/ˌɪd.i.əˈsɪŋ.krə.si/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag14",
+          "name": "사회"
+        }
+      ],
+      "submittedBy": "김민수 교수님",
+      "dateAdded": "2023-03-06T09:00:00Z",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "adv7",
+      "word": "juxtaposition",
+      "meaning": "병치, 나란히 놓음",
+      "translation": "並置 (일본어)",
+      "example": "The juxtaposition of modern and traditional architecture creates an interesting effect.",
+      "pronunciation": "/ˌdʒʌk.stə.pəˈzɪʃ.ən/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag20",
+          "name": "문화예술"
+        }
+      ],
+      "submittedBy": "이정호 교수님",
+      "dateAdded": "2023-03-07T09:00:00Z",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "adv8",
+      "word": "metamorphosis",
+      "meaning": "변태, 변형",
+      "translation": "変態 (일본어)",
+      "example": "The caterpillar undergoes metamorphosis to become a butterfly.",
+      "pronunciation": "/ˌmet.əˈmɔː.fə.sɪs/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag12",
+          "name": "과학"
+        }
+      ],
+      "submittedBy": "박성희 교수님",
+      "dateAdded": "2023-03-08T09:00:00Z",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "adv9",
+      "word": "paradigm",
+      "meaning": "패러다임, 전형",
+      "translation": "パラダイム (일본어)",
+      "example": "Einstein's theory of relativity introduced a new paradigm in physics.",
+      "pronunciation": "/ˈpær.ə.daɪm/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag12",
+          "name": "과학"
+        }
+      ],
+      "submittedBy": "정유라 교수님",
+      "dateAdded": "2023-03-09T09:00:00Z",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "adv10",
+      "word": "quintessential",
+      "meaning": "전형적인, 본질적인",
+      "translation": "典型的な (일본어)",
+      "example": "She is the quintessential example of a successful entrepreneur.",
+      "pronunciation": "/ˌkwɪn.təˈsen.ʃəl/",
+      "tags": [
+        {
+          "id": "tag3",
+          "name": "형용사"
+        },
+        {
+          "id": "tag14",
+          "name": "사회"
+        }
+      ],
+      "submittedBy": "최진우 교수님",
+      "dateAdded": "2023-03-10T09:00:00Z",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "adv11",
+      "word": "serendipity",
+      "meaning": "우연한 행운, 뜻밖의 발견",
+      "translation": "セレンディピティ (일본어)",
+      "example": "The discovery of penicillin was an example of serendipity.",
+      "pronunciation": "/ˌser.ənˈdɪp.ə.ti/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag12",
+          "name": "과학"
+        }
+      ],
+      "submittedBy": "김민수 교수님",
+      "dateAdded": "2023-03-11T09:00:00Z",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "adv12",
+      "word": "ubiquitous",
+      "meaning": "편재하는, 어디에나 있는",
+      "translation": "偏在する (일본어)",
+      "example": "Smartphones have become ubiquitous in modern society.",
+      "pronunciation": "/juːˈbɪk.wɪ.təs/",
+      "tags": [
+        {
+          "id": "tag3",
+          "name": "형용사"
+        },
+        {
+          "id": "tag12",
+          "name": "과학"
+        }
+      ],
+      "submittedBy": "이정호 교수님",
+      "dateAdded": "2023-03-12T09:00:00Z",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "adv13",
+      "word": "vicarious",
+      "meaning": "대리의, 간접 경험의",
+      "translation": "代理の (일본어)",
+      "example": "People often live vicariously through social media.",
+      "pronunciation": "/vɪˈkeə.ri.əs/",
+      "tags": [
+        {
+          "id": "tag3",
+          "name": "형용사"
+        },
+        {
+          "id": "tag14",
+          "name": "사회"
+        }
+      ],
+      "submittedBy": "박성희 교수님",
+      "dateAdded": "2023-03-13T09:00:00Z",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "adv14",
+      "word": "zeitgeist",
+      "meaning": "시대정신",
+      "translation": "時代精神 (일본어)",
+      "example": "This art movement perfectly captures the zeitgeist of the 1960s.",
+      "pronunciation": "/ˈzaɪt.ɡaɪst/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag20",
+          "name": "문화예술"
+        }
+      ],
+      "submittedBy": "정유라 교수님",
+      "dateAdded": "2023-03-14T09:00:00Z",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "adv15",
+      "word": "xenophobia",
+      "meaning": "외국인 혐오증",
+      "translation": "外国人嫌悪 (일본어)",
+      "example": "The government is taking measures to combat xenophobia.",
+      "pronunciation": "/ˌzen.əˈfəʊ.bi.ə/",
+      "tags": [
+        {
+          "id": "tag2",
+          "name": "명사"
+        },
+        {
+          "id": "tag14",
+          "name": "사회"
+        }
+      ],
+      "submittedBy": "최진우 교수님",
+      "dateAdded": "2023-03-15T09:00:00Z",
+      "difficulty": "advanced"
+    }
+  ]
+}
