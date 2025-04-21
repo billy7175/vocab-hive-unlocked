@@ -1,12 +1,9 @@
 
 import { useState, useEffect } from "react";
-import Header from "@/components/layout/Header";
-import ScrollToTopButton from "@/components/layout/ScrollToTopButton";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import WordGrid from "@/components/vocabulary/WordGrid";
-import { getAllWords } from "@/data/mockVocabularyData";
 import { WordEntry, Tag, FilterOptions, SortOption } from "@/types/vocabulary";
+import PageLayout from "@/components/layout/common/PageLayout";
 
 const MyWordsPage = () => {
   const [words, setWords] = useState<WordEntry[]>([]);
@@ -19,11 +16,37 @@ const MyWordsPage = () => {
   const [sortOption, setSortOption] = useState<SortOption>("newest");
 
   useEffect(() => {
-    // In a real app, this would fetch the user's bookmarked words from an API
-    // For this demo, we'll just filter the mock data for bookmarked words
-    const allWords = getAllWords();
-    const bookmarkedWords = allWords.filter(word => word.isBookmarked);
-    setWords(bookmarkedWords);
+    // 청크 파일에서 저장된 단어를 가져오기
+    const loadBookmarkedWords = async () => {
+      try {
+        // 전체 단어 가져오기
+        const elementaryResponse = await fetch('/word-chunks/elementary/chunk-1.json');
+        const middleResponse = await fetch('/word-chunks/middle/chunk-1.json');
+        const highResponse = await fetch('/word-chunks/high/chunk-1.json');
+        
+        const elementaryData = await elementaryResponse.json();
+        const middleData = await middleResponse.json();
+        const highData = await highResponse.json();
+        
+        // 모든 단어 합치기
+        const allWords = [
+          ...elementaryData.words, 
+          ...middleData.words, 
+          ...highData.words
+        ];
+        
+        // 실제로는 서버에서 저장된 북마크 단어를 가져와야 하지만
+        // 이 데모에서는 모든 단어의 일부를 북마크로 사용
+        // 물론 실제로는 이부분이 서버에서 제공되어야 함
+        const bookmarkedWords = allWords.slice(0, 10); // 처음 10개를 북마크로 설정
+        
+        setWords(bookmarkedWords);
+      } catch (error) {
+        console.error('북마크 단어 로드 오류:', error);
+      }
+    };
+    
+    loadBookmarkedWords();
   }, []);
 
   const handleSearch = (term: string) => {
@@ -61,17 +84,11 @@ const MyWordsPage = () => {
     });
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header onSearch={handleSearch} />
-      <ScrollToTopButton />
-      
-      <main className="container py-6 px-4 md:py-10">
-        <div className="mb-8 text-center">
-          <h1 className="text-3xl font-bold mb-2">My Words</h1>
-          <p className="text-lg text-muted-foreground">
-            Your bookmarked vocabulary words for easy reference
-          </p>
-        </div>
+    <PageLayout
+      title="My Words"
+      description="Your bookmarked vocabulary words for easy reference"
+      onSearch={handleSearch}
+    >
         
         {filteredWords.length > 0 ? (
           <WordGrid 
@@ -95,8 +112,7 @@ const MyWordsPage = () => {
             </Button>
           </div>
         )}
-      </main>
-    </div>
+    </PageLayout>
   );
 };
 

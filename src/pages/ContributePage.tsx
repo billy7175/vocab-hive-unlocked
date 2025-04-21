@@ -1,14 +1,14 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "@/components/layout/Header";
+import PageLayout from "@/components/layout/common/PageLayout";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
-import { MOCK_TAGS } from "@/data/mockVocabularyData";
+import { Tag } from "@/types/vocabulary";
 import { v4 as uuidv4 } from "uuid";
 
 const ContributePage = () => {
@@ -23,8 +23,27 @@ const ContributePage = () => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [difficulty, setDifficulty] = useState<string>("intermediate");
   const [submitting, setSubmitting] = useState(false);
+  const [availableTags, setAvailableTags] = useState<Tag[]>([]);
+  
+  useEffect(() => {
+    // 청크 파일에서 태그 데이터 가져오기
+    const loadTags = async () => {
+      try {
+        const metadataResponse = await fetch('/word-chunks/metadata.json');
+        const metadata = await metadataResponse.json();
+        
+        if (metadata && metadata.tags) {
+          setAvailableTags(metadata.tags);
+        }
+      } catch (error) {
+        console.error('태그 로드 오류:', error);
+      }
+    };
+    
+    loadTags();
+  }, []);
 
-  const filteredTags = MOCK_TAGS.filter(tag => 
+  const filteredTags = availableTags.filter(tag => 
     tag.name.toLowerCase().includes(tagSearch.toLowerCase())
   );
 
@@ -51,15 +70,13 @@ const ContributePage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header onSearch={() => {}} />
-      
-      <main className="container py-6 px-4 md:py-10">
-        <div className="max-w-3xl mx-auto">
-          <h1 className="text-3xl font-bold mb-6">Contribute a New Word</h1>
-          <p className="text-muted-foreground mb-6">
-            Share your vocabulary knowledge with the community. All submissions will be reviewed before being published.
-          </p>
+    <PageLayout
+      title="Contribute a New Word"
+      description="Share your vocabulary knowledge with the community. All submissions will be reviewed before being published."
+      onSearch={() => {}}
+    >
+      <div className="max-w-3xl mx-auto">
+
           
           <form onSubmit={handleSubmit}>
             <Card>
@@ -204,8 +221,7 @@ const ContributePage = () => {
             </Card>
           </form>
         </div>
-      </main>
-    </div>
+    </PageLayout>
   );
 };
 

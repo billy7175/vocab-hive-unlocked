@@ -1,18 +1,14 @@
 import { useState, useEffect } from "react";
-import Header from "@/components/layout/Header";
-import ScrollToTopButton from "@/components/layout/ScrollToTopButton";
+import { useNavigate } from "react-router-dom";
+import PageLayout from "@/components/layout/common/PageLayout";
 import WordGrid from "@/components/vocabulary/WordGrid";
 import FilterSidebar from "@/components/vocabulary/FilterSidebar";
 import TrendingSection from "@/components/vocabulary/TrendingSection";
-import { 
-  getAllWords, 
-  MOCK_TAGS, 
-  getTrendingWords,
-  getPopularTags
-} from "@/data/mockVocabularyData";
+// 청크 파일에서 데이터를 가져오도록 변경
 import { WordEntry, Tag, FilterOptions, SortOption } from "@/types/vocabulary";
 
 const Index = () => {
+  const navigate = useNavigate();
   const [allWords, setAllWords] = useState<WordEntry[]>([]);
   const [filteredWords, setFilteredWords] = useState<WordEntry[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -26,11 +22,42 @@ const Index = () => {
   const [popularTags, setPopularTags] = useState<Tag[]>([]);
 
   useEffect(() => {
-    // In a real app, this would fetch from an API
-    const words = getAllWords();
-    setAllWords(words);
-    setTrendingWords(getTrendingWords(8));
-    setPopularTags(getPopularTags(12));
+    // 청크 파일에서 데이터 가져오기
+    const loadVocabularyData = async () => {
+      try {
+        // 전층 메타데이터 가져오기
+        const metadataResponse = await fetch('/word-chunks/metadata.json');
+        const metadata = await metadataResponse.json();
+        
+        // 태그 정보 가져오기
+        const tags = metadata.tags || [];
+        setPopularTags(tags.slice(0, 12));
+        
+        // 초급, 중급, 고급 청크 파일에서 단어 가져오기
+        const elementaryResponse = await fetch('/word-chunks/elementary/chunk-1.json');
+        const middleResponse = await fetch('/word-chunks/middle/chunk-1.json');
+        const highResponse = await fetch('/word-chunks/high/chunk-1.json');
+        
+        const elementaryData = await elementaryResponse.json();
+        const middleData = await middleResponse.json();
+        const highData = await highResponse.json();
+        
+        // 모든 단어 합치기
+        const allWords = [
+          ...elementaryData.words, 
+          ...middleData.words, 
+          ...highData.words
+        ];
+        
+        setAllWords(allWords);
+        // 최근에 추가된 단어 8개를 트렌딩으로 사용
+        setTrendingWords(allWords.slice(0, 8));
+      } catch (error) {
+        console.error('단어 데이터 로드 오류:', error);
+      }
+    };
+    
+    loadVocabularyData();
   }, []);
 
   useEffect(() => {
@@ -52,14 +79,10 @@ const Index = () => {
     setSearchTerm(term);
   };
 
-  const handleTagClick = (tag: Tag) => {
-    // Add tag to filters if not already included
-    if (!filterOptions.tags.some(t => t.id === tag.id)) {
-      setFilterOptions({
-        ...filterOptions,
-        tags: [...filterOptions.tags, tag]
-      });
-    }
+const handleTagClick = (tag: Tag) => {
+    // 태그 클릭 시 난이도별 단어장 페이지로 이동할 수 있도록 로직 수정 가능
+    console.log('Tag clicked:', tag);
+    navigate('/level-based');
   };
 
   const handleBookmark = (wordId: string) => {
@@ -82,16 +105,15 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header onSearch={handleSearch} />
-      <ScrollToTopButton />
-      
-      <main className="container py-6 md:py-10">
-        <div className="mb-10">
-          <h1 className="text-4xl font-bold text-center mb-4">VocabHive</h1>
-          <p className="text-xl text-center text-muted-foreground mb-6 max-w-3xl mx-auto">
-            Discover, learn, and contribute to our community-driven English vocabulary collection
-          </p>
+    <PageLayout
+      onSearch={handleSearch}
+      containerClassName="px-0 md:px-4"
+    >
+      <div className="mb-10 px-4">
+        <h1 className="text-4xl font-bold text-center mb-4">VocabHive</h1>
+        <p className="text-xl text-center text-muted-foreground mb-6 max-w-3xl mx-auto">
+          Discover, learn, and contribute to our community-driven English vocabulary collection
+        </p>
           
           {/* Trending section */}
           <div className="mb-10">
@@ -108,11 +130,11 @@ const Index = () => {
           {/* Filter sidebar */}
           <aside className="md:w-64 lg:w-72 shrink-0">
             <FilterSidebar 
-              allTags={MOCK_TAGS}
-              filterOptions={filterOptions}
-              sortOption={sortOption}
-              onFilterChange={setFilterOptions}
-              onSortChange={setSortOption}
+            allTags={popularTags}
+            filterOptions={filterOptions}
+            sortOption={sortOption}
+            onFilterChange={setFilterOptions}
+            onSortChange={setSortOption}
             />
           </aside>
           
@@ -131,8 +153,7 @@ const Index = () => {
             />
           </div>
         </div>
-      </main>
-    </div>
+    </PageLayout>
   );
 };
 

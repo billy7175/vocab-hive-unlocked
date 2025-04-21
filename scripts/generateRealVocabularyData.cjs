@@ -599,8 +599,7 @@ function generateRealVocabularyData() {
   );
   
   console.log(`실제 단어 데이터가 생성되었습니다: ${OUTPUT_FILE}`);
-  console.log(`총 단어 수: ${data.words.length}`);
-  console.log(`난이도별 단어 수:`);
+  console.log(`총 단어 수: ${data.words.length}`);  console.log(`난이도별 단어 수:`);
   console.log(`- 초등 (beginner): ${elementaryWords.length}`);
   console.log(`- 중등 (intermediate): ${intermediateWords.length}`);
   console.log(`- 고등 (advanced): ${advancedWords.length}`);
