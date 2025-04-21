@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import Header from '@/components/layout/Header';
 import ScrollToTopButton from '@/components/layout/ScrollToTopButton';
-import { cn } from '@/lib/utils';
+// utils.ts 파일은 삭제되었으므로 cn 함수 대체
 
 interface PageLayoutProps {
   children: ReactNode;
@@ -33,12 +33,17 @@ const PageLayout: React.FC<PageLayoutProps> = ({
     onSearch(term);
   };
 
+  // cn 함수 대체방법: 여러 클래스를 합치는 유틸리티 함수
+  const combineClasses = (...classes: string[]) => {
+    return classes.filter(Boolean).join(' ');
+  };
+
   return (
-    <div className={cn("min-h-screen bg-background", className)}>
+    <div className={combineClasses("min-h-screen bg-background", className || '')}>
       {showHeader && <Header onSearch={handleSearch} className={headerClassName} />}
       <ScrollToTopButton />
       
-      <main className={cn("container py-6 px-4 md:py-10", containerClassName)}>
+      <main className={combineClasses("container py-6 px-4 md:py-10", containerClassName || '')}>
         {(title || description) && (
           <div className="mb-8 text-center">
             {title && <h1 className="text-3xl font-bold mb-2">{title}</h1>}
@@ -50,7 +55,7 @@ const PageLayout: React.FC<PageLayoutProps> = ({
           </div>
         )}
         
-        <div className={cn("w-full", contentClassName)}>
+        <div className={combineClasses("w-full", contentClassName || '')}>
           {children}
         </div>
       </main>
